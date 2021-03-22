@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PeliculaController;
+use App\Http\Controllers\ComentarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Muestra una lista de todas las películas
+Route::get('/', [PeliculaController::class, 'index']);
+
+// Muestra una página con información más detallada sobre una película
+Route::get('/detalles/{id}', [PeliculaController::class, 'mostrar']);
+
+// Guarda los comentarios hechos por los usuarios
+Route::post('/comentario/{id}', [ComentarioController::class, 'guardar']);
