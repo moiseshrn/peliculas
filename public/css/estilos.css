@@ -49,6 +49,10 @@ body {
     margin-bottom: 2%;
 }
 
+.encabezado a {
+    text-decoration: none;
+}
+
 .encabezado h1 {
     display: inline-block;
     padding-left: 2%;

@@ -9,6 +9,7 @@
 </head>
 <body>
    <div class="encabezado container-fluid">
+   <a href="{{ request()->root() }}">
        <div class="row">
             <img 
                 src="{{ asset('iconos/popcorn.svg')  }}" 
@@ -19,6 +20,7 @@
             >
             <h1 class="col-auto d-flex align-items-center">Películas</h1>
        </div>
+   </a>
    </div>
    <div class="container-md contenido">
        @yield('contenido')
