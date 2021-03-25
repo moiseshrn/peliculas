@@ -89,7 +89,7 @@ class PeliculaController extends Controller
             SELECT  p.titulo, p.fecha_estreno, p.ruta_img,
               SUBSTRING(p.sinopsis, 0, 200) || '...' AS sinopsis,
               COUNT(c.comentario) AS total_comentarios, 
-              AVG(c.puntuacion) AS puntuacion, p.id
+              AVG(c.puntuacion)::NUMERIC(10,2) AS puntuacion, p.id
             FROM pelicula p
             LEFT JOIN comentario c
               ON c.id_pelicula = p.id
@@ -112,7 +112,7 @@ class PeliculaController extends Controller
         $sql = "
             SELECT  p.titulo, p.fecha_estreno, p.sinopsis, p.ruta_img,
               COUNT(c.comentario) AS total_comentarios, 
-              AVG(c.puntuacion) AS puntuacion, p.id,
+              AVG(c.puntuacion)::NUMERIC(10,2) AS puntuacion, p.id,
               p.fecha_estreno, g.genero
             FROM pelicula p
             INNER JOIN genero g
