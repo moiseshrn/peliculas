@@ -1,6 +1,6 @@
 ## Sitio web de demostración
 
-Este un sitio web que muestra reseñas de peliculas. Los usuarios pueden agregar comentarios sobre una película y calificarla.
+Sitio web que muestra reseñas de películas. Los usuarios pueden agregar comentarios sobre una película y calificarla.
 
 ## Tecnologias utilizadas
 
