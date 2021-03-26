@@ -2,6 +2,11 @@
 
 Sitio web que muestra reseñas de películas. Los usuarios pueden agregar comentarios sobre una película y calificarla.
 
+Si desea ver una demostración en funcionamiento de la aplicación aqui dejo el enlace.
+Nota: La aplicación tarda unos cuantos segundos en iniciar la primera vez que se usa.
+
+<a href="http://peliculas-5621.herokuapp.com/">Demostración de aplicación web</a>
+
 ## Tecnologias utilizadas
 
 <ul>
